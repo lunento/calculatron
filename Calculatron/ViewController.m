@@ -23,7 +23,17 @@
 }
 
 
-- (IBAction)onOperationTapped:(id)sender {
+- (IBAction)onOperationTapped:(UIButton *)sender {
+    self.operatingLabel.text = sender.currentTitle;
+    if ([self.operatingLabel.text isEqualToString:@"+"]) {
+        
+    } else if ([self.operatingLabel.text isEqualToString:@"-"]) {
+    } else if ([self.operatingLabel.text isEqualToString:@"*"]) {
+        
+    } else {
+        
+    }
+    
 }
 
 @end
