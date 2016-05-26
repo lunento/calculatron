@@ -19,7 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    
 }
 
 
@@ -31,11 +34,20 @@
     self.operatingLabel.text = sender.currentTitle;
     if ([self.operatingLabel.text isEqualToString:@"+"]) {
         
-    } else if ([self.operatingLabel.text isEqualToString:@"-"]) {
-    } else if ([self.operatingLabel.text isEqualToString:@"*"]) {
+        self.title = [NSString stringWithFormat:@"%.2f", op1 + op2];
         
+    } else if ([self.operatingLabel.text isEqualToString:@"-"]) {
+
+        self.title = [NSString stringWithFormat:@"%.2f", op1 - op2];
+        
+    } else if ([self.operatingLabel.text isEqualToString:@"*"]) {
+
+        self.title = [NSString stringWithFormat:@"%.2f", op1 * op2];
+
     } else {
         
+        self.title = [NSString stringWithFormat:@"%.2f", op1 / op2];
+
     }
 }
 
