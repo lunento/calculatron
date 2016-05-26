@@ -24,6 +24,12 @@
 
 
 - (IBAction)onOperationTapped:(id)sender {
+    
+
+    // Ernie's VERY SMART code added below on 5/26 @ 12:01 PM:
+    double op1 = self.operandOne.text.doubleValue;
+    double op2 = self.operandTwo.text.doubleValue;
+    
 }
 
 @end
